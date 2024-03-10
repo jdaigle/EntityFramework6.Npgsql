@@ -1,13 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <Description>PostgreSQL provider for Entity Framework 6</Description>
-    <Authors>Shay Rojansky;Emil Lenngren;Francisco Figueiredo Jr.;Kenji Uno</Authors>
+    <Authors>Shay Rojansky;Emil Lenngren;Francisco Figueiredo Jr.;Kenji Uno;Joseph Daigle</Authors>
     <Copyright>Copyright 2020 © The Npgsql Development Team</Copyright>
     <Company>Npgsql</Company>
     <PackageTags>npgsql postgresql postgres data database entity framework ef orm</PackageTags>
-    <VersionPrefix>6.4.3</VersionPrefix>
+    <VersionPrefix>7.0.6</VersionPrefix>
     <LangVersion>latest</LangVersion>
-    <TargetFrameworks>net45;net461;netstandard21</TargetFrameworks>
+    <TargetFrameworks>net48;netstandard21</TargetFrameworks>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <NoWarn>CS1591</NoWarn>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
@@ -21,8 +21,9 @@
     <PackageIcon>postgresql.png</PackageIcon>
     <PackageLicenseExpression>PostgreSQL</PackageLicenseExpression>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>git://github.com/npgsql/EntityFramework6.Npgsql</RepositoryUrl>
+    <RepositoryUrl>git://github.com/jdaigle/EntityFramework6.Npgsql</RepositoryUrl>
     <Deterministic>true</Deterministic>
+    <PackageId>EntityFramework6.Npgsql-7</PackageId>
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources/*" />
@@ -50,6 +51,7 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="JetBrains.Annotations" Version="2023.3.0" PrivateAssets="all" />
     <PackageReference Include="Npgsql" />
     <PackageReference Include="EntityFramework" />
   </ItemGroup>

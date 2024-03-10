@@ -183,7 +183,7 @@ namespace Npgsql.SqlGenerators
                 sqlText.Append("E'").Append(((string)_value).Replace(@"\", @"\\").Replace("'", @"\'")).Append("'");
                 break;
             case PrimitiveTypeKind.Time:
-                sqlText.AppendFormat(ni, "INTERVAL '{0}'", (NpgsqlTimeSpan)(TimeSpan)_value);
+                sqlText.AppendFormat(ni, "INTERVAL '{0}'", (TimeSpan)_value);
                 break;
             default:
                 // TODO: must support more constant value types.

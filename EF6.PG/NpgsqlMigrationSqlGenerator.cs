@@ -725,14 +725,14 @@ namespace Npgsql
         void AppendValue(DateTime value, StringBuilder sql)
         {
             sql.Append("'");
-            sql.Append(new NpgsqlTypes.NpgsqlDateTime(value));
+            sql.Append(value);
             sql.Append("'");
         }
 
         void AppendValue(DateTimeOffset value, StringBuilder sql)
         {
             sql.Append("'");
-            sql.Append(new NpgsqlTypes.NpgsqlDateTime(value.UtcDateTime));
+            sql.Append(value.UtcDateTime);
             sql.Append("'");
         }
 
@@ -753,7 +753,7 @@ namespace Npgsql
         void AppendValue(TimeSpan value, StringBuilder sql)
         {
             sql.Append("'");
-            sql.Append(new NpgsqlTypes.NpgsqlTimeSpan(value));
+            sql.Append(value);
             sql.Append("'");
         }
 

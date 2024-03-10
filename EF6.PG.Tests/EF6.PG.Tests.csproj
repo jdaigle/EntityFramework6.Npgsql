@@ -1,11 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
-    <TargetFrameworks>net45;netcoreapp3.1</TargetFrameworks>
+    <TargetFrameworks>net48;net7.0</TargetFrameworks>
     <RootNamespace>EntityFramework6.Npgsql.Tests</RootNamespace>
     <AssemblyName>EntityFramework6.Npgsql.Tests</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="JetBrains.Annotations" Version="2023.3.0" />
     <PackageReference Include="EntityFramework" />
     <PackageReference Include="NUnit" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" />
